@@ -101,15 +101,31 @@ You can access the Django admin panel at `http://localhost:8000/admin/`.
 
 ## Project Structure
 multilingual_faq/
-├── faq_project/                # Django project folder
-├── faqs/                       # Django app for managing FAQs
-├── Dockerfile                  # Docker configuration
-├── docker-compose.yml          # Docker Compose configuration
-├── manage.py                   # Django manage.py file
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project README
-├── .gitignore                  # Git ignore file
-└── venv/                       # Virtual environment (not tracked in git)
+│── faq_project/                 
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   ├── asgi.py
+│
+│── faqs/                         
+│   ├── migrations/               # Database migrations
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── views.py
+│   ├── serializers.py
+│   ├── urls.py
+│   ├── tests.py
+│   └── utils.py
+│
+│── requirements.txt
+│── manage.py
+│── README.md
+│── Dockerfile
+│── docker-compose.yml
+│── .gitignore
 
 ## Docker Support
 
